@@ -1,0 +1,11 @@
+[package]
+name = "caps_switch"
+version = "0.2.0"
+edition = "2024"
+
+[dependencies]
+windows = { version = "0.51", features = [
+  "Win32_UI_Input_KeyboardAndMouse",
+  "Win32_UI_WindowsAndMessaging",
+  "Win32_Foundation",
+] }
