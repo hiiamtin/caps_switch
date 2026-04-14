@@ -20,7 +20,7 @@ Grab the latest release from the [Releases](../../releases) page, or build from 
 **Prerequisites:** [Rust](https://rustup.rs/) (MSVC toolchain)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/caps_switch.git
+git clone https://github.com/hiiamtin/caps_switch.git
 cd caps_switch
 cargo build --release
 ```
