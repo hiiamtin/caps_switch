@@ -9,14 +9,7 @@ Written in Rust. Zero dependencies. No installer needed. Just run the exe.
 
 ## Features
 
-- No console window — runs silently in the system tray
-- Right-click tray icon to exit
-- Custom embedded icon
-- Zero-latency keyboard hook (Low Level Keyboard Hook)
-- Atomic input simulation via `SendInput` (batch mode)
-- Ignores auto-repeat when holding the key
-- Correctly blocks Caps Lock toggle at `WM_KEYDOWN` to prevent LED flicker
-- Passes through injected events (`LLKHF_INJECTED`) to prevent infinite loops
+- Short press Caps Lock → switch language, Long press → normal Caps Lock
 
 ## Download
 
