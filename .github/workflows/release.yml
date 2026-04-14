@@ -17,7 +17,13 @@ jobs:
 
       - run: cargo build --release --locked
 
+      - run: |
+          $hash = (Get-FileHash target/release/caps_switch.exe -Algorithm SHA256).Hash
+          "$hash  caps_switch.exe" | Out-File -Encoding utf8 -NoNewline caps_switch.exe.sha256
+
       - uses: softprops/action-gh-release@v2
         with:
-          files: target/release/caps_switch.exe
+          files: |
+            target/release/caps_switch.exe
+            caps_switch.exe.sha256
           generate_release_notes: true
